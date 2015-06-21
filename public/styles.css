@@ -1,0 +1,104 @@
+body {
+  background-color: #ddd;
+  margin-top:       60px;
+}
+
+#inputs {
+  box-shadow:         0px 0px 10px #888;
+  -webkit-box-shadow: 0px 0px 10px #888;
+  -moz-box-shadow:    0px 0px 10px #888;
+
+  border-radius:         3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius:    3px;
+
+  background-color: #fff;
+  padding:          15px;
+}
+
+#inputs-heading {
+  padding: 0px 15px;
+}
+
+#inputs-heading h1.page-header {
+  text-align: center;
+}
+
+#payment-inputs .info-heading {
+  margin-bottom: 15px;
+  margin-top:    10px;
+}
+
+#chart {
+  height:   350px;
+  position: relative;
+  width:    540px;
+}
+
+#chart #chart-title {
+  font-size:   18px;
+  font-weight: bold;
+  text-align:  center;
+}
+
+svg {
+  font-weight:  bold;
+  height:       100%;
+  padding-left: 105px;
+  padding-top:  20px;
+  width:        100%;
+}
+
+path.slice {
+  stroke-width: 2px;
+}
+
+polyline {
+  opacity:      0.4;
+  stroke:       #000;
+  stroke-width: 1px;
+  fill:         none;
+}
+
+svg text[text-anchor='middle'] {
+  font-size: 22px;
+}
+
+.section-header {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.section-divider {
+  margin: 12px auto;
+  width:  35%;
+}
+
+#payment-breakdown #breakdown-container,
+#total-cost #total-cost-container {
+  font-size:  18px;
+  margin-top: 20px;
+}
+
+#amortization-table {
+  font-weight: 200;
+  margin:      0px auto;
+  width:       85%;
+}
+
+#amortization-table tbody tr {
+  height:    20px;
+}
+
+#amortization-table tbody tr td {
+  padding: 0px;
+}
+
+#amortization-table .amortization-first-column {
+  text-align: center;
+}
+
+#amortization-table tbody #amortization-totals {
+  background-color: #ccc;
+  font-weight:      bold;
+}

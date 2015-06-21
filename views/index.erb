@@ -1,0 +1,145 @@
+<div id="inputs">
+  <div id="inputs-heading">
+    <h1 class="page-header">Mortgage Calculator</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div id="payment-inputs" class="col-md-6">
+      <p class="info-heading">Enter the values for the mortgage you wish to calculate payments for:</p>
+
+      <form id="inputs-form" class="form-horizontal">
+        <div class="form-group">
+          <label for="amount" class="control-label col-md-4">Mortgage Amount</label>
+          <div class="input-group col-md-6">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" id="amount" value="500000">
+            <div class="input-group-addon">.00</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="years" class="control-label col-md-4">Term in Years</label>
+          <div class="input-group col-md-6">
+            <input type="text" class="form-control" id="years" value="30">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="rate" class="control-label col-md-4">Interest Rate/Year</label>
+          <div class="input-group col-md-6">
+            <input type="text" class="form-control" id="rate" value="4.00">
+            <div class="input-group-addon">%</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="taxes" class="control-label col-md-4">Taxes/Year</label>
+          <div class="input-group col-md-6">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" id="taxes" value="5000">
+            <div class="input-group-addon">.00</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="insurance" class="control-label col-md-4">Insurance/Year</label>
+          <div class="input-group col-md-6">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control" id="insurance" value="1000">
+            <div class="input-group-addon">.00</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="calculate-cost" class="col-md-offset-4 btn btn-default">Calculate</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="chart" class="col-md-6">
+      <p id="chart-title">Monthly Payment</p>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div id="payment-breakdown" class="col-md-12">
+      <hr class="section-divider"/>
+      <h3 class="section-header">Per-Payment Breakdown</h3>
+      <hr class="section-divider"/>
+
+      <div id="breakdown-container" class="form-horizontal">
+        <div class="col-md-5 form-group">
+          <label class="col-md-7 control-label">Principal/Interest:</label>
+          <div class="col-md-5">
+            <p class="form-control-static" id="principalInterestBreakdown">$###</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 form-group">
+          <label class="col-md-5 control-label">Taxes:</label>
+          <div class="col-md-7">
+            <p class="form-control-static" id="taxesBreakdown">$###</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 form-group">
+          <label class="col-md-6 control-label">Insurance:</label>
+          <div class="col-md-6">
+            <p class="form-control-static" id="insuranceBreakdown">$###</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div id="total-cost" class="col-md-12">
+      <hr class="section-divider"/>
+      <h3 class="section-header">Total Mortgage Cost</h3>
+      <hr class="section-divider"/>
+
+      <div id="total-cost-container" class="form-horizontal">
+        <div class="col-md-4 form-group">
+          <label class="col-md-5 control-label">Principal:</label>
+          <div class="col-md-7">
+            <p class="form-control-static" id="principalTotal">$###</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 form-group">
+          <label class="col-md-5 control-label">Interest:</label>
+          <div class="col-md-7">
+            <p class="form-control-static" id="interestTotal">$###</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 form-group">
+          <label class="col-md-5 control-label">Total Cost:</label>
+          <div class="col-md-7">
+            <p class="form-control-static" id="mortgageTotal">$###</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div id="amortization-schedule" class="col-md-12">
+      <hr class="section-divider"/>
+      <h3 class="section-header">Amortization Schedule</h3>
+      <hr class="section-divider"/>
+
+      <table id="amortization-table" class="table table-condensed table-striped">
+        <thead>
+          <tr>
+            <th class='amortization-first-column'>Payment Number</th>
+            <th>Interest</th>
+            <th>Principal</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
